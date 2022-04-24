@@ -2008,6 +2008,10 @@ input, select, textarea {
 			padding: 0;
 		}
 
+		.box {
+			border-color: rgba(143, 143, 143, 0.25);
+		}
+
 /* Icon */
 
 	.icon {
@@ -2126,11 +2130,11 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 70%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 70%;
 			}
 
 /* List */
@@ -3806,6 +3810,215 @@ input, select, textarea {
 
 			#cta .inner .actions {
 				max-width: none;
+			}
+
+		}
+
+/* Post */
+
+		.post {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			margin: 0 0 3.5rem 0;
+			min-height: 28rem;
+		}
+
+		.post > .content {
+			padding: 0rem 4rem 5rem 0;
+			width: 60%;
+		}
+
+		.post > .content header .category {
+			font-weight: 600;
+			display: block;
+			margin: 0 0 0.35rem 0;
+		}
+
+		.post > .content > :last-child {
+			margin-bottom: 0;
+		}
+
+		.post > .image {
+			-moz-align-self: stretch;
+			-webkit-align-self: stretch;
+			-ms-align-self: stretch;
+			align-self: stretch;
+			width: 40%;
+			min-height: inherit;
+			border-radius: 4px;
+		}
+
+		.post > .image img {
+			border-radius: 4px;
+		}
+
+		.post.alt {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+		.post.alt > .content {
+			padding: 0rem 0 5rem 4rem;
+		}
+
+		.post.style2 {
+			border-radius: 4px;
+		}
+
+		.post.style2 > .content {
+			padding: 5rem 4rem;
+		}
+
+		.post.style2 > .image {
+			border-radius: 0 4px 4px 0;
+		}
+
+		.post.style2 > .image img {
+			border-radius: 0 4px 4px 0;
+		}
+
+		.post.style2.alt {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+		.post.style2.alt > .content {
+			padding: 5rem 4rem;
+		}
+
+		.post.style2.alt > .image {
+			border-radius: 4px 0 0 4px;
+		}
+
+		.post.style2.alt > .image img {
+			border-radius: 4px 0 0 4px;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.post > .content {
+				padding: 4rem 3rem 4rem 0;
+				width: 50%;
+			}
+
+			.post > .image {
+				width: 50%;
+			}
+
+			.post.alt > .content {
+				padding: 4rem 0 4rem 3rem;
+			}
+
+			.post.style2 > .content {
+				padding: 4rem 3rem;
+			}
+
+			.post.style2.alt > .content {
+				padding: 4rem 3rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.post > .content {
+				padding: 2.5rem 2rem 2.5rem 0;
+				width: 50%;
+			}
+
+			.post > .image {
+				width: 50%;
+			}
+
+			.post.alt > .content {
+				padding: 2.5rem 0 2.5rem 2rem;
+			}
+
+			.post.style2 > .content {
+				padding: 2rem;
+			}
+
+			.post.style2.alt > .content {
+				padding: 2rem;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.post {
+				-moz-flex-direction: column-reverse !important;
+				-webkit-flex-direction: column-reverse !important;
+				-ms-flex-direction: column-reverse !important;
+				flex-direction: column-reverse !important;
+				border-top: solid 1px;
+				padding-top: 2rem;
+			}
+
+			.post > .content {
+				padding: 0 !important;
+				width: 100% !important;
+			}
+
+			.post > .image {
+				width: 100% !important;
+				min-height: 0;
+				height: 15rem;
+				border-radius: 4px 4px 0 0 !important;
+				margin: 0 0 2rem 0;
+			}
+
+			.post > .image img {
+				border-radius: 4px 4px 0 0 !important;
+			}
+
+			.post:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+
+			.post.style2 {
+				border-top: 0;
+				padding-top: 0;
+			}
+
+			.post.style2 > .content {
+				padding: 2rem !important;
+				margin: 0;
+			}
+
+			.post.style2 > .image {
+				margin-bottom: 0;
+			}
+
+			.post.style2.alt > .content {
+				padding: 2rem !important;
+			}
+
+		}
+
+		.post > .content header .category {
+			color: #4a98e2;
+		}
+
+		.post.style2 {
+			background-color: #ffffff;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.post {
+				border-top-color: rgba(143, 143, 143, 0.25);
 			}
 
 		}
