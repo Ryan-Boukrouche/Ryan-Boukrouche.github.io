@@ -51,10 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
-
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -1840,7 +1836,6 @@ input, select, textarea {
 		border: none;
 		color: inherit;
 		display: block;
-		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
@@ -3391,7 +3386,6 @@ input, select, textarea {
 					display: block;
 					font-size: 0.8em;
 					letter-spacing: 0.225em;
-					outline: 0;
 					text-decoration: none;
 					text-transform: uppercase;
 				}
@@ -3517,7 +3511,6 @@ input, select, textarea {
 					}
 
 						#header nav > ul > li > a.menuToggle {
-							outline: 0;
 							position: relative;
 						}
 
@@ -3663,7 +3656,6 @@ input, select, textarea {
 			letter-spacing: 0.225em;
 			margin-left: -8.5em;
 			opacity: 1;
-			outline: 0;
 			padding-left: 0.225em;
 			position: absolute;
 			text-align: center;
@@ -4209,4 +4201,18 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+/* Keyboard focus */
+	body :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+		outline: 2px solid #ffffff;
+		outline-offset: 4px;
+		box-shadow: 0 0 0 4px #8a0303 !important;
+	}
+
+	input[type="checkbox"]:focus-visible + label:before,
+	input[type="radio"]:focus-visible + label:before {
+		outline: 2px solid #ffffff;
+		outline-offset: 3px;
+		box-shadow: 0 0 0 2px #8a0303;
 	}
